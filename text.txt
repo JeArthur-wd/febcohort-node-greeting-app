@@ -1,0 +1,10 @@
+step 1: create a folder .github with a subfolder workflows.
+step 2: create a .yaml file in the workflows folder.
+step 3: In the workflows;
+        -Assign the workflow a name.
+        -Specify trigger on branch.
+        -Add a runner.
+        -Create a job with the following steps;
+                -checkout code using prebuilt code actions
+                -set up node on the runner with prebuilt actions
+                -Run tests
