@@ -1,4 +1,4 @@
-name: CI
+name: ci
 on:
     push:
        branches: [main]
@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: 25
 
-      - name: run CI
-        run: npm CI
+      - name: run ci
+        run: npm ci
             
       - name: run tests
         run: npm test
