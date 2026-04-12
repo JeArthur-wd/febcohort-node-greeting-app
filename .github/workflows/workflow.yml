@@ -22,7 +22,7 @@ jobs:
         run: npm test
 
       - name: linter
-        run: npm run lints
+        run: npm run lint
 
   # lint:
   #   runs-on: ubuntu-latest
