@@ -5,7 +5,7 @@ on:
 
 
 jobs:                                   
-  build:                            
+  test:                            
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
@@ -21,6 +21,22 @@ jobs:
             
       - name: run tests
         run: npm test
+
+      - name: linter
+        run: npm run lint
+        
+        
+
+    lint:                            
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v6
+
+      - name: setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25
 
       - name: linter
         run: npm run lint
