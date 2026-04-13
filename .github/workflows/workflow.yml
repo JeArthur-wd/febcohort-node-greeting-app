@@ -59,7 +59,7 @@ jobs:
           username: ${{ secrets .DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: extract docker meta data
+      - name: Docker meta
         id: meta
         uses: docker/metadata-action@v6
         with:
